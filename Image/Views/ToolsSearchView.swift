@@ -24,7 +24,7 @@ struct ToolsSearch: View {
         NamedSize(name: "Иконка")
     ]
     
-    enum Size: String {
+    enum Size {
         case L
         case M
         case I

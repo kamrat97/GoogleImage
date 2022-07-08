@@ -140,12 +140,12 @@
 		F5BDD7D12874371A00EA769A /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				F5BDD7D62874371A00EA769A /* Assets.xcassets */,
 				F5970D3528752E2A003D516A /* Info.plist */,
 				F56DC9AF2877FCA400D00CB1 /* Extensions */,
 				F56DC9AD2877FBA400D00CB1 /* Views */,
 				F5BDD7FF287437A900EA769A /* Models */,
 				F5BDD7FE2874379D00EA769A /* Managers */,
-				F5BDD7D62874371A00EA769A /* Assets.xcassets */,
 				F5BDD7D82874371A00EA769A /* Preview Content */,
 			);
 			path = Image;
