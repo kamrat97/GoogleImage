@@ -26,7 +26,7 @@ struct DetailedImageView: View {
             HStack() {
                 Button {
                     withAnimation{
-                        currentImage = LastImage(currentImage: currentImage, imageArray: imageArray!)
+                        currentImage = LastImage(currentImage, imageArray: imageArray!)
                     }
                 } label: {
                     Image(systemName: "arrow.left.square.fill")
@@ -36,7 +36,7 @@ struct DetailedImageView: View {
                 Spacer()
                 Button {
                     withAnimation{
-                        currentImage = NextImage(currentImage: currentImage, imageArray: imageArray!)
+                        currentImage = NextImage(currentImage, imageArray: imageArray!)
                     }
                 } label: {
                     Image(systemName: "arrow.right.square.fill")
@@ -70,7 +70,7 @@ struct DetailedImageView: View {
         }
     }
     
-    func NextImage(currentImage: ImagesResult, imageArray: ImageModel) -> ImagesResult {
+    private func NextImage(_ currentImage: ImagesResult, imageArray: ImageModel) -> ImagesResult {
         for (index, value) in imageArray.imagesResults.enumerated(){
             if currentImage.thumbnail == value.thumbnail && index + 1 != imageArray.imagesResults.count {
                 return imageArray.imagesResults[index + 1]
@@ -79,7 +79,7 @@ struct DetailedImageView: View {
         return currentImage
     }
     
-    func LastImage(currentImage: ImagesResult, imageArray: ImageModel) -> ImagesResult {
+    private func LastImage(_ currentImage: ImagesResult, imageArray: ImageModel) -> ImagesResult {
         for (index, value) in imageArray.imagesResults.enumerated(){
             if currentImage.thumbnail == value.thumbnail && index != 0 {
                 return imageArray.imagesResults[index - 1]
