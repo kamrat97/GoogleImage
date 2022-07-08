@@ -12,6 +12,7 @@ struct ImageApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ImageManager())
         }
     }
 }

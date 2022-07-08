@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F56DC9AC2877D4A100D00CB1 /* ImageWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56DC9AB2877D4A100D00CB1 /* ImageWebView.swift */; };
+		F5970D3428752CAF003D516A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5970D3328752CAF003D516A /* Extension.swift */; };
 		F5BDD7D32874371A00EA769A /* ImageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BDD7D22874371A00EA769A /* ImageApp.swift */; };
 		F5BDD7D52874371A00EA769A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BDD7D42874371A00EA769A /* ContentView.swift */; };
 		F5BDD7D72874371A00EA769A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5BDD7D62874371A00EA769A /* Assets.xcassets */; };
@@ -14,6 +16,12 @@
 		F5BDD7E42874371B00EA769A /* ImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BDD7E32874371B00EA769A /* ImageTests.swift */; };
 		F5BDD7EE2874371B00EA769A /* ImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BDD7ED2874371B00EA769A /* ImageUITests.swift */; };
 		F5BDD7F02874371B00EA769A /* ImageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BDD7EF2874371B00EA769A /* ImageUITestsLaunchTests.swift */; };
+		F5BDD801287437C200EA769A /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BDD800287437C200EA769A /* ImageManager.swift */; };
+		F5BDD803287437D200EA769A /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BDD802287437D200EA769A /* ImageModel.swift */; };
+		F5BDD806287438D800EA769A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F5BDD805287438D800EA769A /* SDWebImageSwiftUI */; };
+		F5BDD80828743B4900EA769A /* DetailedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BDD80728743B4900EA769A /* DetailedImageView.swift */; };
+		F5C0688E28756E7800A86648 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C0688D28756E7800A86648 /* WebView.swift */; };
+		F5C0689028757A6D00A86648 /* ToolsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C0688F28757A6D00A86648 /* ToolsSearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F56DC9AB2877D4A100D00CB1 /* ImageWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWebView.swift; sourceTree = "<group>"; };
+		F5970D3328752CAF003D516A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		F5970D3528752E2A003D516A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F5BDD7CF2874371A00EA769A /* Image.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Image.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BDD7D22874371A00EA769A /* ImageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageApp.swift; sourceTree = "<group>"; };
 		F5BDD7D42874371A00EA769A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +55,11 @@
 		F5BDD7E92874371B00EA769A /* ImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BDD7ED2874371B00EA769A /* ImageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUITests.swift; sourceTree = "<group>"; };
 		F5BDD7EF2874371B00EA769A /* ImageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F5BDD800287437C200EA769A /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		F5BDD802287437D200EA769A /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		F5BDD80728743B4900EA769A /* DetailedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedImageView.swift; sourceTree = "<group>"; };
+		F5C0688D28756E7800A86648 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		F5C0688F28757A6D00A86648 /* ToolsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BDD806287438D800EA769A /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +88,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F56DC9AD2877FBA400D00CB1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F56DC9AE2877FBC400D00CB1 /* CustomView */,
+				F56DC9AB2877D4A100D00CB1 /* ImageWebView.swift */,
+				F5BDD7D42874371A00EA769A /* ContentView.swift */,
+				F5BDD7D22874371A00EA769A /* ImageApp.swift */,
+				F5C0688F28757A6D00A86648 /* ToolsSearchView.swift */,
+				F5BDD80728743B4900EA769A /* DetailedImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F56DC9AE2877FBC400D00CB1 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				F5C0688D28756E7800A86648 /* WebView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		F56DC9AF2877FCA400D00CB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5970D3328752CAF003D516A /* Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F5BDD7C62874371A00EA769A = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +140,11 @@
 		F5BDD7D12874371A00EA769A /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				F5BDD7D22874371A00EA769A /* ImageApp.swift */,
-				F5BDD7D42874371A00EA769A /* ContentView.swift */,
+				F5970D3528752E2A003D516A /* Info.plist */,
+				F56DC9AF2877FCA400D00CB1 /* Extensions */,
+				F56DC9AD2877FBA400D00CB1 /* Views */,
+				F5BDD7FF287437A900EA769A /* Models */,
+				F5BDD7FE2874379D00EA769A /* Managers */,
 				F5BDD7D62874371A00EA769A /* Assets.xcassets */,
 				F5BDD7D82874371A00EA769A /* Preview Content */,
 			);
@@ -127,6 +176,22 @@
 			path = ImageUITests;
 			sourceTree = "<group>";
 		};
+		F5BDD7FE2874379D00EA769A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F5BDD800287437C200EA769A /* ImageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F5BDD7FF287437A900EA769A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5BDD802287437D200EA769A /* ImageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +208,9 @@
 			dependencies = (
 			);
 			name = Image;
+			packageProductDependencies = (
+				F5BDD805287438D800EA769A /* SDWebImageSwiftUI */,
+			);
 			productName = Image;
 			productReference = F5BDD7CF2874371A00EA769A /* Image.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +283,9 @@
 				Base,
 			);
 			mainGroup = F5BDD7C62874371A00EA769A;
+			packageReferences = (
+				F5BDD804287438D800EA769A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = F5BDD7D02874371A00EA769A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +328,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BDD801287437C200EA769A /* ImageManager.swift in Sources */,
 				F5BDD7D52874371A00EA769A /* ContentView.swift in Sources */,
 				F5BDD7D32874371A00EA769A /* ImageApp.swift in Sources */,
+				F5C0689028757A6D00A86648 /* ToolsSearchView.swift in Sources */,
+				F5970D3428752CAF003D516A /* Extension.swift in Sources */,
+				F5BDD803287437D200EA769A /* ImageModel.swift in Sources */,
+				F5BDD80828743B4900EA769A /* DetailedImageView.swift in Sources */,
+				F5C0688E28756E7800A86648 /* WebView.swift in Sources */,
+				F56DC9AC2877D4A100D00CB1 /* ImageWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,14 +495,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Image/Preview Content\"";
-				DEVELOPMENT_TEAM = 2NNTS3ZMBM;
+				DEVELOPMENT_TEAM = NU3K52APZL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Image/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,14 +527,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Image/Preview Content\"";
-				DEVELOPMENT_TEAM = 2NNTS3ZMBM;
+				DEVELOPMENT_TEAM = NU3K52APZL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Image/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -583,6 +667,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5BDD804287438D800EA769A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5BDD805287438D800EA769A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5BDD804287438D800EA769A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F5BDD7C72874371A00EA769A /* Project object */;
 }
