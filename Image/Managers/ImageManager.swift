@@ -60,7 +60,8 @@ class ImageManager: ObservableObject {
         }
         ///Переменные для параметров поиска
         var toolsURL = ""
-        var currentLocation: String?
+        var currentLocation: String
+        var currentLanguages: String
         ///Условие определяет был ли выбран размер изображения
         if isSelectedLarge || isSelectedIcon || isSelectedMedium {
             var tools = "&tbs="
@@ -86,17 +87,17 @@ class ImageManager: ObservableObject {
         }
         ///Определяет какой был выбран язык
         switch languages {
-            case .Portuguese: currentLocation = "&gl=pt"
-            case .German: currentLocation = "&gl=de"
-            case .Indonesian: currentLocation = "&gl=id"
-            case .Japanese: currentLocation = "&gl=ja"
-            case .Spanish: currentLocation = "&gl=es"
-            case .Russian: currentLocation = "&gl=ru"
-            case .English: currentLocation = "&gl=en"
-            case .NoSelection : currentLocation = ""
+            case .Portuguese: currentLanguages = "&gl=pt"
+            case .German: currentLanguages = "&gl=de"
+            case .Indonesian: currentLanguages = "&gl=id"
+            case .Japanese: currentLanguages = "&gl=ja"
+            case .Spanish: currentLanguages = "&gl=es"
+            case .Russian: currentLanguages = "&gl=ru"
+            case .English: currentLanguages = "&gl=en"
+            case .NoSelection : currentLanguages = ""
         }
         ///Проверяет ссылку на коректность и создает константу с этой ссылкой
-        guard let url = URL(string: "https://serpapi.com/search.json?engine=google&q=\(searchString)\(currentLocation!)&tbm=isch&start=0&num=20&ijn=0\(toolsURL)&api_key=5fcce852d130b772b17e89c928e23ead4e3e82425ee0d4eae8bd01b7002706f2".encodeUrl) else { fatalError("Missing URL")}
+        guard let url = URL(string: "https://serpapi.com/search.json?engine=google&q=\(searchString)\(currentLocation)\(currentLanguages)&tbm=isch&start=0&num=20&ijn=0\(toolsURL)&api_key=5fcce852d130b772b17e89c928e23ead4e3e82425ee0d4eae8bd01b7002706f2".encodeUrl) else { fatalError("Missing URL")}
         
         let urlRequest = URLRequest(url: url)
         ///Выполняет запрос в сеть с помощью реквеста
